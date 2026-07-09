@@ -70,7 +70,7 @@ nav {
     flex-direction: column;
 }
 
-.hero-top h1 {
+.hero-top h1, .speaker h1 {
     font-size: 2.5rem;
 }
 
@@ -82,3 +82,48 @@ nav {
     
 }
 
+
+/* speaker section style */
+.speaker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px auto;
+    gap: 30px;
+}
+
+.speaker-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 20px 200px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.speaker-card-details {
+    box-shadow: 2px 2px 20px rgb(228, 228, 228);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.speaker-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+}
+
+.speaker-title {
+    color: blue;
+    font-size: 0.8rem;
+}
+
+.speaker-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.speaker-position {
+    font-size: 0.8rem;
+}
