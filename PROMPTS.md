@@ -1,0 +1,1 @@
+I'm currently working on a static webpage named DevConf which is about a developers conference. There are some key sections like: hero, speker, ticket price. I want to add another section right after the ticket card section. suggest some relevant section ideas
