@@ -70,16 +70,12 @@ nav {
     flex-direction: column;
 }
 
-.hero-top h1, .speaker h1, .ticket h1 {
+.hero-top h1, .speaker h1, .ticket h1, .faq h1 {
     font-size: 2.5rem;
 }
 
 .hero-top h1 span {
     font-style: italic;
-}
-
-.hero-bottom {
-    
 }
 
 
@@ -173,6 +169,10 @@ nav {
     border-bottom: 1px solid #E5E7EB;
 }
 
+.black .price {
+    border-bottom: 1px solid #303031;
+}
+
 .price p {
     font-size: 0.8rem;
 }
@@ -192,7 +192,13 @@ nav {
 
 .ticket-details ul li {
     list-style: none;
+    color: #575757;
 }
+
+.black .ticket-details ul li {
+    color: #d7d7d7;
+} 
+
 .ticket-details ul li span {
     color: #3232f5;
 }
@@ -204,6 +210,7 @@ nav {
     color: #3232f5;
     border-radius: 8px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 
@@ -215,9 +222,98 @@ nav {
     font-weight: bold;
     border: none;
     box-shadow: 1px 1px 5px #3232f5;
+    cursor: pointer;
 }
 
 .black-border {
     border: 1px solid black;
     color: black;
+}
+
+
+/* FAQ style */
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+    gap: 40px;
+}
+
+.faq-list {
+    background-color: #fcf6f6;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1000px;
+    padding: 50px 100px;
+    border-radius: 10px;
+}
+
+.faq-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    color: #0D1B2A;
+}
+
+.faq-item p {
+    color: #575757;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+
+/* Footer design */
+footer {
+    background-color: #0D1B2A;
+    padding: 60px 100px 30px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+    color: #575757;
+    cursor: pointer;
+}
+
+.footer-divider {
+    border: none;
+    height: 1px;
+    background-color: #2a3b4c;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p {
+    color: #575757;
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #575757;
+    text-decoration: none;
+    font-size: 0.9rem;
 }
